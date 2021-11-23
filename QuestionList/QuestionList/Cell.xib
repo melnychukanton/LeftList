@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="85" id="CqG-1a-lEP" customClass="CustomCell" customModule="QuestionList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="555" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CqG-1a-lEP" id="smY-an-un1">
+                <rect key="frame" x="0.0" y="0.0" width="555" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohH-qy-iCK">
+                        <rect key="frame" x="15" y="7" width="533" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8e-2N-GUh">
+                        <rect key="frame" x="15" y="42.5" width="533" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="d8e-2N-GUh" firstAttribute="top" secondItem="ohH-qy-iCK" secondAttribute="bottom" constant="15" id="LqL-Qi-1AL"/>
+                    <constraint firstAttribute="trailing" secondItem="ohH-qy-iCK" secondAttribute="trailing" constant="7" id="SAi-yM-pb5"/>
+                    <constraint firstItem="ohH-qy-iCK" firstAttribute="leading" secondItem="smY-an-un1" secondAttribute="leading" constant="15" id="Tvb-4J-Ijm"/>
+                    <constraint firstItem="d8e-2N-GUh" firstAttribute="leading" secondItem="smY-an-un1" secondAttribute="leading" constant="15" id="UdO-3y-dMx"/>
+                    <constraint firstAttribute="trailing" secondItem="d8e-2N-GUh" secondAttribute="trailing" constant="7" id="iFy-GQ-hzH"/>
+                    <constraint firstAttribute="bottom" secondItem="d8e-2N-GUh" secondAttribute="bottom" constant="12" id="mt8-nu-5dB"/>
+                    <constraint firstItem="ohH-qy-iCK" firstAttribute="top" secondItem="smY-an-un1" secondAttribute="top" constant="12" id="oco-A3-jkF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textValue" destination="d8e-2N-GUh" id="TDu-N1-KgB"/>
+                <outlet property="title" destination="ohH-qy-iCK" id="Ndy-Am-mui"/>
+            </connections>
+            <point key="canvasLocation" x="118.11594202898551" y="9.7098214285714288"/>
+        </tableViewCell>
+    </objects>
+</document>

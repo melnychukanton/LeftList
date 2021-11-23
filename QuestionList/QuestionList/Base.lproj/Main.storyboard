@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuestionList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p41-Cf-GDb">
+                                <rect key="frame" x="0.0" y="0.0" width="398" height="834"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pNg-xt-rQQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="834"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pNg-xt-rQQ" secondAttribute="trailing" id="T7V-8w-kRA"/>
+                                    <constraint firstItem="pNg-xt-rQQ" firstAttribute="top" secondItem="p41-Cf-GDb" secondAttribute="top" id="XjX-ly-2kS"/>
+                                    <constraint firstAttribute="bottom" secondItem="pNg-xt-rQQ" secondAttribute="bottom" id="i2V-oZ-qXB"/>
+                                    <constraint firstItem="pNg-xt-rQQ" firstAttribute="leading" secondItem="p41-Cf-GDb" secondAttribute="leading" id="nQv-1P-r6A"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DxN-g9-V4l">
+                                <rect key="frame" x="398" y="0.0" width="796" height="814"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="p41-Cf-GDb" secondAttribute="bottom" id="5yM-zW-OJU"/>
+                            <constraint firstItem="p41-Cf-GDb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AGH-Ov-dlW"/>
+                            <constraint firstItem="p41-Cf-GDb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DkR-dN-Ihi"/>
+                            <constraint firstItem="DxN-g9-V4l" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JNO-do-F0P"/>
+                            <constraint firstItem="DxN-g9-V4l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ott-AM-GXw"/>
+                            <constraint firstAttribute="width" secondItem="p41-Cf-GDb" secondAttribute="width" multiplier="3" id="XXo-ER-Ufb"/>
+                            <constraint firstItem="DxN-g9-V4l" firstAttribute="width" secondItem="p41-Cf-GDb" secondAttribute="width" multiplier="2" id="ZRO-Bz-pby"/>
+                            <constraint firstItem="DxN-g9-V4l" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ncc-MK-nBX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="listView" destination="p41-Cf-GDb" id="W0A-Ih-3jh"/>
+                        <outlet property="tableView" destination="pNg-xt-rQQ" id="15s-qr-Xk0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.496402877697843" y="83.91959798994975"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
